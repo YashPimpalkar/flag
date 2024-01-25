@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .tri{
+          margin: 0 20px;
+        }
         .flag{
+            
             width: 270px;
-            height: 180px;
-            background-color: #ff9933;
+            height: 180px;   
             position: relative;
         }
         .top{
@@ -86,12 +89,30 @@
             100% {
                 transform: rotate(360deg);
             }}
-
+            .flag-rod {
+            width: 15px;
+            height: 50vh;
+            background-color: #333; /* color of the rod */
+            position: absolute;
+            top: 0px; /* adjust based on the flag design */
+            left: 0px; /* adjust based on the flag design */
+        }
+        .stairs{
+             height: 50px;
+             width: 100px;
+        }
+        .rectangle{
+             height: 20px;
+             width: 50px;
+             background-color: grey;
+        }
         
     </style>
 </head>
 <body>
     <div class="flag">
+        <div class="flag-rod"></div>
+        <div class="tri">
        <div class="top"> </div>
        <div class="middle">
        <div class="wheel">
@@ -109,7 +130,14 @@
           <span class="line"></span>
        </div>
        </div>
+    
        <div class="bottom"></div>
+    </div>
+    </div>
+
+    <div class="stairs">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
     </div>
 </body>
 </html>
